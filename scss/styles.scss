@@ -1,0 +1,163 @@
+$font-family: 'Red Hat Text', sans-serif;
+$font-size: 45px;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-family;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    padding-top: 150px;
+    flex-direction: column;
+    background-image: url(https://res.cloudinary.com/devking/image/upload/v1633109515/Launch%20countdown%20timer%20challenge%20hub/bg-stars_dnudlh.svg);
+    background-color: hsl(235, 16%, 14%);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    .section_2{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    h2{
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+    img{
+        position: relative;
+        width: 100%;
+    }
+    .countdown{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+
+        @media screen and (max-width:1085px){
+            width: 70%;
+        }
+        @media screen and (max-width: 800px){
+            width: 90%;
+        }
+
+        .days{
+            width: 120px;
+            background-color: hsl(236, 21%, 26%);
+            height: 60px;
+            top: 80px;
+            border-radius: 10px;
+            position: relative;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,1);
+            box-shadow: 0px 10px 5px 0px rgba(0,0,0,1);
+
+            @media screen and (max-width: 800px){
+                width: 100px;
+                height: 50px;
+            }
+
+            @media screen and (max-width: 488px){
+                width: 80px;
+                height: 45px;
+            }
+        }
+        .day{
+            position: relative;
+            top: 90px; 
+            margin: 0 42px;
+            color: white;
+            letter-spacing: 2px;
+
+            @media screen and (max-width: 800px){
+                top: 80px;
+                margin: 0 29px;
+            }
+
+            @media screen and (max-width: 488px){
+                margin: 0 20px;
+            }
+        }
+        .dayss{
+           position: relative;
+           top: 90px;
+           margin: 0 30px;
+           color: white;
+           letter-spacing: 2px;
+
+            @media screen and (max-width: 800px){
+                top: 80px;
+                margin: 0 24px;
+            }
+            @media screen and (max-width: 488px){
+                margin: 0 15px;
+            }
+        }
+        .daysss{
+           position: relative;
+           top: 90px;
+           margin: 0 25px;
+           color: white;
+           letter-spacing: 2px;
+
+            @media screen and (max-width: 800px){
+                top: 80px;
+                margin: 0 15px;
+            }
+            @media screen and (max-width: 488px){
+                margin: 0 8px;
+            }
+        }
+
+        .time{
+            position: absolute;
+            top: 34px;
+            font-size: $font-size;
+            left: 34px;
+            z-index: 2;
+            color: hsl(345, 95%, 68%);
+
+            @media screen and (max-width: 800px){
+                left: 29px;
+                top: 25px;
+            }
+
+            @media screen and (max-width: 488px){
+                font-size: 40px;
+                left: 20px;
+                top: 20px;
+            }
+        }
+        .time1{
+            position: absolute;
+            top: 35px;
+            left: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $font-size;
+            z-index: 2;
+            color: hsl(345, 95%, 68%);
+
+            @media screen and (max-width: 800px){
+                left: 15px;
+                top: 25px;
+            }
+
+            @media screen and (max-width: 488px){
+                font-size: 40px;
+                left: 7px;
+                top: 20px;
+            }
+        }
+      
+    }
+}
